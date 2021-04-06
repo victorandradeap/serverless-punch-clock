@@ -1,0 +1,12 @@
+org: victorandradeap
+app: serverless-punch-clock
+service: serverless-punch-clock
+
+provider:
+  name: aws
+  runtime: python3.8
+  lambdaHashingVersion: 20201221
+
+functions:
+  main:
+    handler: serverless_punch_clock/handler.handle
